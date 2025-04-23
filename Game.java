@@ -48,13 +48,13 @@ public class Game {
             int moveCount = random.nextInt(5) + 1;
             System.out.println("Move count: " + moveCount);
 
-            // Randomly choose direction (true means clockwise; false means counterclockwise)
-            boolean clockwise = random.nextBoolean();
+            // Randomly choose direction
+            boolean counterclockwise = random.nextBoolean();
             String directionStr = "";
-            if (clockwise) {
-                directionStr = "clockwise";
-            } else {
+            if (counterclockwise) {
                 directionStr = "counterclockwise";
+            } else {
+                directionStr = "clockwise";
             }
             System.out.println("Direction: " + directionStr);
 
